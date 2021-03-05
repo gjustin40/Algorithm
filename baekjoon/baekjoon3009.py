@@ -1,3 +1,4 @@
+
 x_list = []
 y_list = []
 for _ in range(3):
@@ -5,9 +6,10 @@ for _ in range(3):
     x_list.append(x)
     y_list.append(y)
 
-for i,j in zip(set(x_list), set(y_list)):
+for i in set(x_list):
     if x_list.count(i) == 1:
         x_result = i
+for j in set(y_list):
     if y_list.count(j) == 1:
         y_result = j
         
